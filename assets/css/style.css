@@ -12,7 +12,7 @@ navbar {
   );
   font-family: cursive;
   padding: 5px 15px;
-  font-size: 25px;
+  font-size: 20px;
   width: 100%;
   z-index: 99;
   position: fixed;
@@ -28,7 +28,7 @@ navbar a {
 
 .side-bar {
   position: fixed;
-  width: 250px;
+  width: 200px;
   left: 0;
   top: 45px;
   border-right: 2px solid rgb(206, 192, 192);
@@ -55,7 +55,7 @@ navbar a {
 .main-bar {
   position: absolute;
   margin-top: 10vh;
-  width: calc(100% - 250px);
+  width: calc(100% - 200px);
   right: 0;
   top: 0;
 }
