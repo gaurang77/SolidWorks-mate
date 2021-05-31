@@ -1,0 +1,163 @@
+.body {
+  margin: 0;
+  box-sizing: content-box;
+}
+navbar {
+  background: linear-gradient(
+    to bottom,
+    rgba(30, 87, 153, 1) 0%,
+    rgba(41, 137, 216, 1) 50%,
+    rgba(32, 124, 202, 1) 51%,
+    rgba(125, 185, 232, 1) 100%
+  );
+  font-family: cursive;
+  padding: 5px 15px;
+  font-size: 25px;
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+navbar a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.side-bar {
+  position: fixed;
+  width: 250px;
+  left: 0;
+  top: 45px;
+  border-right: 2px solid rgb(206, 192, 192);
+  background-color: #111;
+  height: 92vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 1px;
+}
+::-webkit-scrollbar-button {
+  background: rgb(17 17 17);
+}
+::-webkit-scrollbar-track-piece {
+  background: rgb(1 87 167);
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(17 17 17);
+}
+
+.main-bar {
+  position: absolute;
+  margin-top: 10vh;
+  width: calc(100% - 250px);
+  right: 0;
+  top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-bar {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  .side-bar {
+    position: relative;
+    background-color: #111;
+    display: block;
+    width: 100%;
+    height: min-content;
+    overflow-y: hidden;
+  }
+}
+
+.content {
+  margin: 0px auto;
+  width: 85%;
+}
+.topicTitle {
+  font-size: 35px;
+  color: #3f6d9c;
+  vertical-align: bottom;
+  border-bottom: 3px solid #ccc;
+}
+.topicText {
+  padding-left: 10px;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  /* font-size: 1rem; */
+  font-weight: 500;
+  line-height: 1.5;
+}
+.container {
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  border: 1px solid rgb(8, 2, 2);
+  margin-bottom: 70px;
+}
+.img-content {
+  width: 100%;
+  object-fit: contain;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.25s ease;
+}
+
+video {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.dwnl {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -35px;
+}
+
+.dwnl h6 {
+  width: 300px;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 0;
+  font-family: cursive;
+}
+
+.dwnl a img {
+  position: relative;
+  top: -48px;
+  left: 272px;
+  width: 49px;
+  height: 47px;
+  margin: 0px;
+  display: inline;
+  padding: 0px;
+}
+
+/*----------------*/
+
+/* input[type="checkbox"] {
+  display: none;
+}
+
+.container img {
+  margin: 0px;
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+input[type="checkbox"]:checked ~ label > img {
+  transform: scale(2);
+  cursor: zoom-out;
+} */
