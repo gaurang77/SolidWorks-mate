@@ -1,0 +1,171 @@
+<style>
+h4.standard-mate,
+h4.advance-mate,
+h4.mechanical-mate {
+  color: white;
+  margin: 0px;
+  padding: 10px 0px;
+  width: 230px;
+  padding-left: 20px;
+  border-bottom: 1px solid gray;
+}
+.sub {
+  margin-top: -2px;
+  margin-right: 20px;
+  float: right;
+  font-size: 16px;
+  color: rgb(23, 169, 226);
+  padding: 3px 4px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.sub:hover {
+  color: white;
+}
+ul.side-bar-list {
+  list-style-type: none;
+  background-color: rgb(184 211 230);
+  margin: 0px;
+  padding-left: 25px;
+}
+
+ul.side-bar-list li {
+  padding-top: 4px;
+}
+
+ul.side-bar-list li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-family: cursive;
+  margin: 15px -3px;
+}
+
+ul.side-bar-list li img {
+  position: relative;
+  top: 3px;
+  left: -8px;
+}
+
+ul.side-bar-list li a:hover {
+  color: rgb(13, 13, 245);
+}
+
+@media only screen and (max-width: 600px) {
+    h4.standard-mate,
+    h4.advance-mate,
+    h4.mechanical-mate {
+        color: white;
+        margin: 0px;
+        padding: 10px 0px;
+        width:100%;
+        padding-left: 20px;
+        border-bottom: 1px solid gray;
+    }
+}
+
+</style>
+
+<!-- Standard Mate -->
+<div>
+    <h4 class="standard-mate">STANDARD MATE
+        <span onclick="toggle(this)" class="sub" id="standard">&#9660;</span>
+    </h4>
+    <ul class="side-bar-list" style="display:none;" id="standardUL">
+        <li>
+            <img src="../sw img/coincident.jpg" alt="">
+            <a href="coincidentMate.html" id="coincidentMate.html">Coincedent Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/concentric.jpg" alt="">
+            <a href="concentricMate.html" id="concentricMate.html">Concentric Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/angle.jpg" alt="">
+            <a href="angleMate.html" id="angleMate.html">Angle Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/parllel.jpg" alt="">
+            <a href="parllelMate.html" id="parllelMate.html">Parllel Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/perpendicular.jpg" alt="">
+            <a href="perpendicularMate.html" id="perpendicularMate.html">Perpendicular Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/distance.jpg" alt="">
+            <a href="distanceMate.html" id="distanceMate.html">Distance Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/Tangent.jpg" alt="">
+            <a href="tangentMate.html" id="tangentMate.html">Tangent Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/lock.jpg" alt="">
+            <a href="lockMate.html" id="lockMate.html">Lock Mate</a>
+        </li>
+    </ul>
+</div>
+<!--/ Standard Mate -->
+
+<!-- Advance Mate -->
+<div>
+    <h4 class="advance-mate">ADVANCE MATE
+        <span onclick="toggle(this)" class="sub" id="advance">&#9660;</span>
+    </h4>
+    <ul class="side-bar-list" style="display: none;" id="advanceUL">
+        <li>
+            <img src="../sw img/symmetric.jpg" alt="">
+            <a href="">Symmetric Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/width.jpg" alt="">
+            <a href="">Width Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/path_mate.jpg" alt="">
+            <a href="">Path Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/linear_coupler.jpg
+                    " alt="">
+            <a href="">Linear Coupling</a>
+        </li>
+    </ul>
+</div>
+<!--/ Advance Mate -->
+
+<!-- Mechanical Mate -->
+<div>
+    <h4 class="mechanical-mate">MECHANICAL MATE
+        <span onclick="toggle(this)" class="sub" id="mechanical">&#9660;</span>
+    </h4>
+    <ul class="side-bar-list" style="display: none;" id="mechanicalUL">
+        <li>
+            <img src="../sw img/hinge.jpg" alt="">
+            <a href="">Hinge Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/gear.jpg" alt="">
+            <a href="">Gear Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/rack_and_pinion.jpg" alt="">
+            <a href="">Rack & Pinion</a>
+        </li>
+        <li>
+            <img src="../sw img/screw.jpg" alt="">
+            <a href="">Screw Mate</a>
+        </li>
+        <li>
+            <img src="../sw img/cam.jpg" alt="">
+            <a href="">Cam Follower</a>
+        </li>
+        <li>
+            <img src="../sw img/universal_joint.jpg" alt="">
+            <a href="">Universal Joint</a>
+        </li>
+    </ul>
+</div>
+<!--/ Mechanical Mate -->
+
