@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concentric Mate</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <navbar>
+        <a href="../index.html">HOME</a>
+    </navbar>
+    <!-- side bar will be fetched by main.js script-->
+    <!-- Note: requires server otherwise fetching wont work -->
+    <div class="side-bar"></div>
+    <!-- define main content in main bar -->
+    <div class="main-bar">
+        <div class="content">
+            <div>
+                <h2 class="topicTitle">Concentric Mate</h2>
+                <p class="topicText">
+                    Places two cylindrical, spherical or conical faces of a part so that they share the same centerline or centeraxis.
+                </p>
+            </div>
+            <div>
+                <h2>Example:</h2>
+                <div class="dwnl">
+                    <h6>Download Example parts </h6>
+                    <a href="../downloads/sw parts 1.rar" download><img src="../sw img/download.jpg" alt="download_img"></a>
+                </div>
+                <ol>
+                    <li>
+                        <p class="topicText">Follow the tutorial of <b>Coincident Mate</b> part to learn opening part files in assembly mode. <br>
+                        Same part file is used as  in the previous section</p>
+                        <p class="topicText">open the part file and duplicate it by pressing <b>ctrl</b> key and dragging any face of the selected part in any direction</p>
+                        <i>Click on the image to activate the zoom functionality,for better viewing use devices with bigger
+                            screens</i>
+                        <div class="container">
+                            <img src="res/angle5.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Now select the circularly hollow face of both the part by while holding the <b>ctrl</b> key. </p>
+                        <div class="container">
+                            <img src="res/mate1.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Click on the <b>Mate</b> button given in the top ribbon section of SW.</p>
+                        <p class="topicText">After that select the <b>concentric mate</b> option given under <b>standard mate</b> section. </p>
+                        <div class="container">
+                            <img src="res/concentric mate.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">for the video tutorial see the angle mate section</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main script-->    
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

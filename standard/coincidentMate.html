@@ -1,0 +1,92 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coincident Mate</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <navbar>
+        <a href="../index.html">HOME</a>
+    </navbar>
+    <!-- side bar will be fetched by main.js script-->
+    <!-- Note: requires server otherwise fetching wont work -->
+    <div class="side-bar"></div>
+    <!-- define main content in main bar -->
+    <div class="main-bar">
+        <div class="content">
+            <div>
+                <h2 class="topicTitle">Coincident Mate</h2>
+                <p class="topicText">
+                Positions selected planes, edges, and faces on the same infinite plane. If two vertices are chosen then the "Coincident mate" will orient them such as they touch each other.
+                </p>
+            </div>
+            <div>
+                <!-- <img src="../sw img/download.jpg" alt="Download"> -->
+                <h2>Example:</h2>
+                <div class="dwnl">
+                    <h6>Download Example parts </h6>
+                    <a href="../downloads/sw parts 1.rar" download><img src="../sw img/download.jpg" alt="download_img"></a>
+                </div>
+               
+                <ol>
+                    <li>
+                        <p class="topicText">Open Solidworks, create new file and choose assembly mode</p>
+                        <i>Click on the image to activate the zoom functionality,for better viewing use devices with bigger screens</i>
+                        <div class="container">
+                            <img src="res/angle1.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Solidworks will automatically open the file browser to select a <b>.sldpart</b> file. <br> in case you dont get the file browser window, add the part file using the insert component button.</p>
+                        <div class="container">
+                            <img src="res/angle2.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Solidworks will position the part in the viewing window, as shown in below image</p>
+                        <div class="container">
+                            <img src="res/angle3.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Now click on any face of the part while holding <b>'ctrl'</b> key and drag the part in any direction to produce a <b>copy</b> of the selected part.</p>
+                        <div class="container">
+                            <img src="res/angle4.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                        <div class="container">
+                            <img src="res/angle5.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Now select the faces of the part as shown in the image given below, after selecting first face of the part hold <b>'ctrl'</b> key and select other face of the duplicated part</p>
+                        <p class="topicText">now select the <b>mate</b> option from the ribbon.</p>
+                        <div class="container">
+                            <img src="res/par4.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">you will see a mate tab open on the left side of the viewing window, this mate tab contains all the different
+                        type of mate operation</p>
+                        <p class="topicText">Solidworks smartly chooses the mate type according to the selected faces orientation and geometry, it also gives options to choose mate operation preffered by you.</p>
+                        <p class="topicText">choose the <b>coincident mate</b> under the <b>standard mate</b> option, the parts will align themselves as shown in the image below</p>
+                        <div class="container">
+                            <img src="res/coincident.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li><p class="topicText">for the video tutorial see the angle mate section</p></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main script-->
+    <script src="../assets/js/main.js"></script>
+    <!--/ Main script-->
+
+</body>
+
+</html>
