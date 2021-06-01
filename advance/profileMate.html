@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Center Mate</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <navbar>
+        <a href="../index.html">HOME</a>
+    </navbar>
+    <!-- side bar will be fetched by main.js script-->
+    <!-- Note: requires server otherwise fetching wont work -->
+    <div class="side-bar"></div>
+    <!-- define main content in main bar -->
+    <div class="main-bar">
+        <div class="content">
+            <div>
+                <h2 class="topicTitle">Profile Mate</h2>
+                <p class="topicText">
+                Profile Center Mate automatically center-aligns geometric profiles to each other and fully defines the components.
+                </p>
+                <p class="topicText">For more info on <b>Profile Centre Mate</b> visit <a href="https://help.solidworks.com/2020/english/SolidWorks/sldworks/t_profile_center_mate.htm" target="_blank">here</a> .</p>
+            </div>
+            <div>
+                <h2>Example:</h2>
+                <div class="dwnl">
+                    <h6>Download Example parts </h6>
+                    <a href="../downloads/sw parts 1.rar" download><img src="../sw img/download.jpg" alt="download_img"></a>
+                </div>
+                <ol>
+                    <li>
+                        <p class="topicText">Select the downloaded part in assembly mode of solidworks </p>
+                        <i>Click on the image to activate the zoom functionality,for better viewing use devices with bigger screens</i>
+                        <div class="container">
+                            <img src="res/adv1.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Copy the componenet by holding <b>ctrl</b> key and <b>dragging</b> the any face of the part in any direction </p>
+                        <div class="container">
+                            <img src="res/adv2.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Select the two faces as shown in the image below </p>
+                        <div class="container">
+                            <img src="res/adv3.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Now apply the profile center mate between the selcected faces, You will find Profile center mate under the <b>Advanced mate</b> section.</p>
+                        <p class="topicText">After applying the mate you will see that the second body has geometrically oriented itself with the centre of profile of first selected face.</p>
+                        <div class="container">
+                            <img src="res/adv4.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">By giving distance value can see the alignment clearly.</p>
+                        <div class="container">
+                            <img src="res/adv5.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Flipping the direction in the distance module will also produce similar result but in opposite direction.</p>
+                        <div class="container">
+                            <img src="res/adv6.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Undo the distance selection and return to profile mate selcetion tab.</p>
+                        <div class="container">
+                            <img src="res/adv7.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                    <li>
+                        <p class="topicText">Click on the <b>rotate orientation</b> button and check <b>flip box</b>  to see the geometries aligning themselves perpendicullarly. </p>
+                        <div class="container">
+                            <img src="res/adv8.png" alt="" class="img-content" onclick="zoom(event,this)" zoom="0">
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main script-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
