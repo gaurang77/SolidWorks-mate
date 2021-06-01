@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Mate</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <navbar>
+        <a href="../index.html">HOME</a>
+    </navbar>
+    <!-- side bar will be fetched by main.js script-->
+    <!-- Note: requires server otherwise fetching wont work -->
+    <div class="side-bar"></div>
+    <!-- define main content in main bar -->
+    <div class="main-bar">
+        <div class="content">
+            <div>
+                <h2 class="topicTitle">Gear Mate</h2>
+                <p class="topicText">
+                Mates two gears or cylindrical faces so that the two components rotate relative to one another about an axis.
+                <br> Note: Select the addendum/deddundum, picth circle or bore hole of the gear or the axis, do not select the face of the gear.
+                </p>
+            </div>
+            <div>
+                <h2 class="topicTitle">Gear Terminology</h2>
+                <p class="topicText">
+                    <b>Module = Pitch Diameter/ Number of teeth of gear</b>
+                    <br>
+                    The module is a very easy parameter to use to determine if two gears of differing pitch diameters will be able
+                    to mate
+                    together; two gears with different modules will not mate together because the unit size of the gear must match
+                    in order
+                    for gears to mate together.
+                </p>
+                <div class="container">
+                    <img src="res/gearTerms.webp" alt="gear-terminology" class="img-content" onclick="zoom(event,this)" zoom="0">
+                </div>
+            </div>
+
+            <div>
+                <h2>Example:</h2>
+                <ol>
+                    <li>
+                        <p class="topicText">Open the toolbox/library setion as shown in the video</p>
+                    </li>
+                    <li><p class="topicText">Select standard of your choice,inside the selected standard dropdown choose the power-transmission tab and under that select gear section. <br> Select Spur gear for our example</p></li>
+                    <li>
+                        <p class="topicText">assign the module, no of teeth parameters as prompted by solidworks</p>
+                    </li>
+                    <li>
+                        <p class="topicText">Repeat the process with another gear with similar structure and module</p>
+                    </li>
+                    <li>
+                        <p class="topicText">Make sure to <b>Float</b> all the selected gears</p>
+                    </li>
+                    <li>
+                        <p class="topicText">Select the top plane and sketch over it <br> create a line as shown in the video , the smaller lines will act as shaft or hub of the gears <br> to dimesion the bigger line use the formula, <b>Line = module1*no_teeth_1 + module2*no_teeth_2</b></p>
+                    </li>
+                    <li>
+                        <p class="topicText">Apply the concentric and coincident mates as shown in the video</p>
+                    </li>
+                    <li>
+                        <p class="topicText">Now align the gear properly to one another and then apply the gear mate</p>
+                    </li>
+                    <li>
+                        <p class="topicText">Gear Mate can be applied on addendum circle ,deddundum circle or pitch circles of the gear to get better gear ratios.</p>
+                    </li>
+                    <li>
+                        <p class="topicText">Heresthe video to Gear Mate process</p>
+                        <video src="res/gear.mp4" controls></video>
+                    </li>
+                </ol>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Main script-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
