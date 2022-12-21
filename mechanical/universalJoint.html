@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Joint</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <navbar>
+        <a href="../index.html">HOME</a>
+    </navbar>
+    <!-- side bar will be fetched by main.js script-->
+    <!-- Note: requires server otherwise fetching wont work -->
+    <div class="side-bar"></div>
+    <!-- define main content in main bar -->
+    <div class="main-bar">
+        <div class="content">
+            <div>
+                <h2 class="topicTitle">Universal Joint Mate</h2>
+                <p class="topicText">
+                    In a Universal Joint mate, the rotation of one component (the output shaft) about its axis is driven by the rotation of another component (the input shaft) about its axis.
+                </p>
+               
+                <div class="container">
+                    <img src="res/uj.gif" alt="gear-terminology" class="img-content" onclick="zoom(event,this)" zoom="0">
+                </div>
+            </div>
+            <div>
+                <h2>Example:</h2>
+                <ol>
+                    <li>
+                        <p class="topicText"> <b>Part creation</b> </p>
+                        <video src="res/uj_part_create.mp4" controls></video>
+                    </li>
+                    <li>
+                        <p class="topicText"> <b>Universal joint without using universal joint Mate</b> </p>
+                        <video src="res/without universal coupler.mp4" controls></video>
+                    </li>
+                    <li>
+                        <p class="topicText"> <b>Using Universal joint Mate</b> </p>
+                        <video src="res/WITH UC.mp4" controls></video>
+                    </li>
+                </ol>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Main script-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screw Mate</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <navbar>
+        <a href="../index.html">HOME</a>
+    </navbar>
+    <!-- side bar will be fetched by main.js script-->
+    <!-- Note: requires server otherwise fetching wont work -->
+    <div class="side-bar"></div>
+    <!-- define main content in main bar -->
+    <div class="main-bar">
+        <div class="content">
+            <div>
+                <h2 class="topicTitle">Screw Mate</h2>
+                <p class="topicText">
+                    A Screw mate constrains two components to be concentric, and also adds a pitch relationship between the rotation of one component and the translation of the other. <br>Translation of one component along the axis causes rotation of the other component according to the pitch relationship. Likewise, rotation of one component causes translation of the other component.
+                </p>
+                <p class="topicText">
+                    Similar to other mate types, screw mates do not prevent interference or collisions between components. To prevent interference, use Collision Detection or Interference Detection.
+                </p>
+                <div class="container">
+                    <img src="res/screwM.png" alt="gear-terminology" class="img-content" onclick="zoom(event,this)" zoom="0">
+                </div>
+            </div>
+            <div>
+                <h2>Options:</h2>
+                <ol>
+                    <li>
+                        <p class="topicText"> <b>Revolutions/length_unit</b> </p>
+                        <p class="topicText">Sets the number of revolutions of one component for each length unit the other component translates. (Click Tools > Options > Document Properties > Units to set the document's unit of length.)</p>
+                    </li>
+                    <li>
+                        <p class="topicText"> <b>Distance/revolution</b> </p>
+                        <p class="topicText">Sets the distance that one component translates for each revolution of the other component.</p>
+                    </li>
+                    <li>
+                        <p class="topicText"> <b>Reverse</b> </p>
+                        <p class="topicText">Changes the direction of movement of the components relative to each other.</p>
+                    </li>
+                </ol>
+            </div>
+            <div>
+                <h2>Example:</h2>
+                <p class="topicText">
+                    Follow the video given below to understand Screw Mate.
+                </p>
+                <video src="res/screw mate.mp4" controls></video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main script-->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
